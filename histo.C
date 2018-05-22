@@ -6,6 +6,16 @@
 
 void histo () {
 
+/*///////////////подключение//////////////////////////////////////////
+    gSystem->Load("libMathMore");
+    gROOT->LoadMacro("runglauber_v3.0.C+");
+///////////////генерация деревьев/////////////////////////////////////
+    runAndSaveNtuple(100000,"Pb","Pb",20.0,-1,0.6,-1,-1,"open1.root");
+    runAndSaveNtuple(100000,"Pb","Pb",34.0,-1,0.6,-1,-1,"open2.root");
+    runAndSaveNtuple(100000,"Pb","Pb",41.6,-1,0.6,-1,-1,"open3.root");
+    runAndSaveNtuple(100000,"Pb","Pb",61.8,-1,0.6,-1,-1,"open4.root");
+/*////////////////////////////////////////////////////////////////////
+
     Float_t Npart,Ncoll,B,Ecc2,Ecc3;
     std::string fileName = "open";
     std::string fileType = ".root";
